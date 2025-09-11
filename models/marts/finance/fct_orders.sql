@@ -7,4 +7,4 @@ FROM
 LEFT JOIN 
     {{ ref('stg_stripe__payments') }} p
 ON 
-    c.order_id = p.orderid;
+    c.order_id = p.order_id;
